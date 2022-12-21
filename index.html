@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>See More/Less</title>
+    <style>
+        body {
+            display: flex;
+            margin: auto;
+            width: 20vw;
+        }
+        .selector_wrap {
+            overflow: hidden;
+            line-height: 24px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="spoiler">
+        <p class="selector_wrap">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+        </p>
+    </div>
+    <div class="spoiler">
+        <p class="selector_wrap">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+        </p>
+    </div>
+</div>
+<script src="./core/jquery-3.6.3.slim.min.js"></script>
+<script src="./core/read-more.js"></script>
+<script>
+    new ReadMore('.spoiler',{
+        text_more: 'Xem thêm',
+        text_less: 'Ẩn bớt',
+        class_button: 'btn btn-primary',
+        selector_wrap: '.selector_wrap',
+        speed: '.15s',
+    },1);
+</script>
+</body>
+</html>
